@@ -14,7 +14,7 @@ chrome.runtime.onMessage.addListener(
           sendResponse({status: "Clicked text saved"});
         });
       });
-      return true;  // Will respond asynchronously.
+      return true;  // async.
     }
   }
 );

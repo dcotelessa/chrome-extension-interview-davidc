@@ -4,7 +4,7 @@ console.log('Must reload extension for modifications to take effect.');
 document.addEventListener(
   'click',
   function (event) {
-    var txt = event.target.innerText;
+    const txt = event.target.innerText;
 
     chrome.runtime.sendMessage({action: "saveClickedText", text: txt}, function(response) {
       if (chrome.runtime.lastError) {
